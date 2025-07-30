@@ -5,12 +5,13 @@
   "main": "server.js",
   "scripts": {
     "start": "node sserver ",
-    "server":"nodemon server"
+    "server": "nodemon server"
   },
   "author": "Nehemie55",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^3.0.2",
+    "check": "^1.0.0",
     "config": "^4.0.1",
     "express": "^5.1.0",
     "express-validator": "^7.2.1",
