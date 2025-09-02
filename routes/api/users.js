@@ -4,14 +4,14 @@ const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 const { check, validationResult } = require('express-validator');
 
-const User = require('./models/User'); 
+const User = require('../../config/models/User.js');
 
-//@route  POST api/user
+//@route  POST api/users
 //@desc   Register user
 //@access Public
 
 router.post(
-  '/',
+  '/',  // ← ADDED THE ROUTE PATH HERE
   [
     check('name', 'Name is required').not().isEmpty(),
     check('email', 'Please include a valid email').isEmail(),

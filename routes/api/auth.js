@@ -6,6 +6,6 @@ const router = express.Router()
 //@desc  test router
 //@access  public
 
-router.get('/', (req,res)=>res.send('auth router'))
+router.get('/', (req,res)=>{res.send('auth router')})
 
 module.exports = router;
